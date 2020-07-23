@@ -20,6 +20,7 @@ st.write("Hello Corey, this is the demo!")
 st.balloons()
 
 print("this is a log line")
+print("Hello Matteo")
 
 uploaded_file = st.file_uploader("Choose a Jpg file", type="jpg")
 if uploaded_file is not None:
