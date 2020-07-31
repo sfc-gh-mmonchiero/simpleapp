@@ -25,5 +25,5 @@ print("Hello Matteo")
 uploaded_file = st.file_uploader("Choose a Jpg file", type="jpg")
 if uploaded_file is not None:
     st.write(uploaded_file)
-import os
-os.stderr.write("A new log line!!! From me!")
+import sys
+sys.stderr.write("A new log line!!! From me!")
