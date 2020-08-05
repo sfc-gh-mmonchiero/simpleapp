@@ -12,4 +12,4 @@ st.write("Streamlit is fabulous")
 
 print("this is a log line")
 print("Hello Matteo")
-print(input)
+print("From the user:", input)
