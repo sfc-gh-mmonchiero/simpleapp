@@ -10,6 +10,6 @@ input = st.text_input("Tell me something", "Cantami o Diva")
 
 st.write("Streamlit is fabulous")
 
-print("this is a log line")
+print("this is a log line with ansi code:  \e[101mLight red")
 print("Hello Matteo")
 print("From the user:", input)
