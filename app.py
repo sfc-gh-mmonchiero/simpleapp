@@ -9,6 +9,8 @@ from multiprocessing import Pool
 work_items = [
     (1, 'A', True),
     (2, 'X', False),
+    (3, 'Y', True),
+    (4, 'Z', False),
 ]
 # Define a callable to do the work. It should take one work item.
 def worker(arg):
@@ -18,7 +20,7 @@ def worker(arg):
 
 # Create a ThreadPool (or a process Pool) of desired size.
 # What size? Experiment. Slowly increase until it stops helping.
-pool = Pool(2)
+pool = Pool(4)
 
 # Do work and collect results.
 # Or use pool.imap() or pool.imap_unordered().
