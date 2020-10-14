@@ -18,13 +18,15 @@ def worker(arg):
     while True:
       counter += 1
 
+cpus = 3
+
 # Create a ThreadPool (or a process Pool) of desired size.
 # What size? Experiment. Slowly increase until it stops helping.
-pool = Pool(4)
+pool = Pool(cpus)
 
 # Do work and collect results.
 # Or use pool.imap() or pool.imap_unordered().
-work_results = pool.map(worker, work_items)
+work_results = pool.map(worker, work_items[0:cpus])
 
 # Wrap up.
 pool.close()
