@@ -3,6 +3,8 @@ import sys
 
 st.title("Test App 335")
 
+st.caption('Hello')
+
 value = st.slider("Pick a number", 0, 10, 3)
 
 st.write(value)
