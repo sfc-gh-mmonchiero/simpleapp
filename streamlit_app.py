@@ -10,7 +10,7 @@ for i in range(0, int(p*3*1024*1024*100)):
     l.append(True * 1024/8)
 
 agree = st.checkbox('Garbage collection')
-if agree
+if agree:
   import gc
   del l
   gc.collect()
