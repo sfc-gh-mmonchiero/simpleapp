@@ -3,8 +3,10 @@ import sys
 
 st.title("Test App 25")
 
+p = st.slider("memory parm", 0.0, 1.0, 1.0)
+
 l = []
-for i in range(0, 3*1024*1024*100):
+for i in range(0, int(p*3*1024*1024*100)):
     l.append(True * 1024/8)
 
 value = st.slider("Pick a number", 0, 10, 3)
