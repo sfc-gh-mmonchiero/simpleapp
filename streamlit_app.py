@@ -3,9 +3,9 @@ import sys
 
 st.title("Test App 25")
 
-# l = []
-# for i in range(0, 3*1024):
-#     l.append("*" * 1024)
+l = []
+for i in range(0, 3*1024*1024):
+    l.append(True * 1024/8)
 
 value = st.slider("Pick a number", 0, 10, 3)
 
