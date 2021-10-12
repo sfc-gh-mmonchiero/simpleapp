@@ -5,6 +5,8 @@ import os
 st.title("Test App 35")
 
 # value = st.slider("Pick a number", 0, 10, 3)
+st.write(os.pwd())
+os.system(pwd)
 os.system("echo test >> text")
 
 # st.write(value)
