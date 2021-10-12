@@ -6,7 +6,11 @@ st.title("Test App 35")
 
 # value = st.slider("Pick a number", 0, 10, 3)
 st.write(os.getcwd())
-os.system("echo test >> text")
+
+f = open("text", "a")
+f.write("something")
+f.close()
+#os.system("echo test >> text")
 
 # st.write(value)
 # sys.stdout.write(str(value) + "\n")
