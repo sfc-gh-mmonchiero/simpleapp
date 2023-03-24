@@ -13,12 +13,3 @@ st.write('test edit')
 st.write(option)
 
 st.write(os.getcwd())
-
-f = open("text", "a")
-f.write("something")
-f.close()
-#os.system("echo test >> text")
-
-# st.write(value)
-# sys.stdout.write(str(value) + "\n")
-# sys.stdout.flush()
